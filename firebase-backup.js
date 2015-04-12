@@ -11,7 +11,7 @@ var firebaseTokenLibrary = '/usr/local/lib/node_modules/firebase-token-generator
 // Where all backup files will be saved
 var backupLocation = 'backups';
 // Your Firebase URL
-var firebaseURL = 'https://hightidealpha.firebaseio.com/';
+var firebaseURL = 'https://your.firebaseio.com/';
 // Your Firebase secret
 var firebaseSecret = 'AWBlgJWYXiwNxn7QPnWXtgWWIg1Y04HOGRfV99Az';
 
