@@ -36,6 +36,7 @@ rootRef.authWithCustomToken(token, function (error) {
 
 	if (error) {
 		console.log(error);
+		process.exit();
 	} else {
 		rootRef.once('value', function (snapshot) {
 			// Construct a filename based on today's date and the exact time in milliseconds
