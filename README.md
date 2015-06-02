@@ -1,21 +1,18 @@
 # Firebase Backup Node
 
-Node.js app to perform Firebase backups.
+1. Install dependencies:
 
-### How to use it
+	$ npm install -g firebase
+	$ npm install -g firebase-token-generator
 
-NOTE: setup the configurations first
+	(you might need sudo)
 
-#### Run from the command line
+2. Create the cron job (to run every minute)
 
-    $ node firebase-backup.js
+	$ crontab -u <user> -e
+	> * * * * * cd && /usr/bin/node firebase-backup.js
 
-#### Setup a cron job
+*Notes:*
 
-    $ crontab -e
-
-    > # Usage: minute hour day-of-month month day-of-week command
-    > # Examples: run a command every monday at 5:30 in afternoon
-    > 30 17 * * 1 cd && /usr/local/bin/node firebase-backup.js
-    > # or every 15 minutes
-    > */15 * * * * cd && /usr/local/bin/node firebase-backup.js
+- Don't forget to set write permissions on the backups folder
+- The full path to node is '/usr/bin/node' on Linux and '/usr/local/bin/node' on Mac.

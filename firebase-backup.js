@@ -2,18 +2,20 @@
 // Configurations
 // **************
 
-// Node.js binary
-var nodeLocation = '/usr/local/bin/node';
 // Firebase library for Node.js (npm install firebase)
-var firebaseLibrary = '/usr/local/lib/node_modules/firebase/lib/firebase-node.js';
+var firebaseLibrary = '/usr/lib/node_modules/firebase/lib/firebase-node.js';
+
 // Firebase token generator library (npm install firebase-token-generator)
-var firebaseTokenLibrary = '/usr/local/lib/node_modules/firebase-token-generator/dist/firebase-token-generator-node.js';
+var firebaseTokenLibrary = '/usr/lib/node_modules/firebase-token-generator/dist/firebase-token-generator-node.js';
+
 // Where all backup files will be saved
 var backupLocation = 'backups';
+
 // Your Firebase URL
-var firebaseURL = 'https://your.firebaseio.com/';
+var firebaseURL = 'https://yourfirebase.firebaseio.com/';
+
 // Your Firebase secret
-var firebaseSecret = 'AWBlgJWYXiwNxn7QPnWXtgWWIg1Y04HOGRfV99Az';
+var firebaseSecret = 'Go to "Secrets" inside your firebase and paste here';
 
 
 
